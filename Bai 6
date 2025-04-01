@@ -1,0 +1,25 @@
+import java.util.Scanner;
+ 
+class Bai06 {
+	static int max(int a, int b) {
+		if (a > b) 
+			return a;
+		return b;
+	}
+ 
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int c = sc.nextInt();
+ 
+        // Bat dang thuc tam giac:
+        // a + b > c, a + c > b, b + c > a
+        // => a + b + c > 2*max(a,b,c)
+ 
+        if (a + b + c > 2 * max(max(a, b), c))
+        	System.out.println("Hop le");
+        else
+        	System.out.println("Khong hop le");
+    }
+}
