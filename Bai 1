@@ -1,0 +1,7 @@
+public class main {
+    public static void main(String[] args) {
+        System.out.println("Ten: Nguyen Ngoc Huy");
+        System.out.println("Ngay sinh: 5/9/2005");
+        System.out.println("MSSV: 1250080074");
+    }
+}
