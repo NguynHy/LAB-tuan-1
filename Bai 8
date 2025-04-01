@@ -1,0 +1,22 @@
+import java.util.Scanner;
+ 
+public class Bai08 {
+    static int f(int a) {
+        int r = a;
+        while (r >= 10)
+            r /= 10;
+        return r;
+    }
+ 
+    static int l(int a) {
+        return a % 10;
+    }
+ 
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+ 
+        System.out.println("Chu so dau tien: " + f(a));
+        System.out.println("Chu so cuoi cung: " + l(a));
+    }
+}
