@@ -1,0 +1,19 @@
+import java.util.Scanner;
+ 
+public class Bai10 {
+    static int count(int a) {
+        int ret = 0;
+        while (a > 0) {
+            ++ret;
+            a /= 10;
+        }
+        return ret;
+    }
+ 
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+ 
+        System.out.println("So chu so: " + count(a));
+    }
+}
