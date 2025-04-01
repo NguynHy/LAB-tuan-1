@@ -1,0 +1,24 @@
+import java.util.Scanner;
+ 
+public class Bai12 {
+    static int reverse(int a) {
+        int ret = 0;
+        while (a > 0) {
+            ret *= 10;
+            ret += a % 10;
+            a /= 10;
+        }
+        return ret;
+    }
+ 
+    static boolean doixung(int a) {
+        return a == reverse(a);
+    }
+ 
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+ 
+        System.out.println(doixung(a));
+    }
+}
